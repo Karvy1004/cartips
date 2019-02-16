@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>  Cartips- Car Service at your fingertips </title>
+<link rel="icon" type="image/ico" href="car.jpg" />
+
+<style>
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(233, 51, 51);
+}
+
+li {
+    display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(179, 37, 37);
+}
+      #map 
+      {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+<li style="float: right"><a href="mailto: karvy.1004@gmail.com">Facebook</a></li>
+<li style="float:right"><a href="mailto: karvy.1004@gmail.com">Instagram</a></li>
+<li style="float:right"><a href="mailto: karvy.1004@gmail.com"> E-mail</a> </li>
+</ul>
+
+
+<marquee direction="right"><img src="car.jpg"  width="100%" height="20%"></marquee>
+
+
+<p align="center"><font face="impact" size="80">CARTIPS- Car Service at your FingerTips</font></p>
+
+<ul>
+<li class="l"> <a href="3.html">Home</a></li>
+<li class="l"><a href="mailto: karvy.1004@gmail.com">Quick service</a></li>
+<li class="l"><a href="mailto: karvy.1004@gmail.com">Service Providers</a> </li>
+<li style="float:right"> <a href="form.html">Sign Up</a></li>
+<li style="float:right"> <a href="login.html">Log In</a> </li>
+</ul>
+
+<div id="map"></div>
+ <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+    
+
+</body>
+</html>

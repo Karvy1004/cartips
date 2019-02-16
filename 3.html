@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  Cartips- Car Service at your fingertips </title>
+<link rel="icon" type="image/ico" href="car.jpg" />
+
+<style>
+   .header
+    {
+         background-color: rgb(139, 231, 243);
+        color: brown;
+        padding: 15px;
+    }
+  .header.menu
+    {
+      font-family: 'Gill Sans';
+      font-size: 50px;
+    }
+  .header.ss
+  {
+    font-family: 'Gill Sans';
+    font-size: 50px;
+    float: right;
+  } 
+      #map 
+      {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+<table>
+<tr>
+<td class="menu"> Find us on</td> 
+<td class="ss">Facebook</td>
+<td class="ss"> Instagram</td>
+<td class="ss"><a href="mailto: karvy.1004@gmail.com"> E-mail</a> </td>
+</table>
+</div>
+
+<!--marquee direction="right"><img src="car.jpg"  width="100%" height="2%"></marquee>-->
+
+
+<p align="center"><font face="impact" size="80">CARTIPS- Car Service at your FingerTips</font></p>
+
+<div class="header">
+<table>
+<tr>
+<td class="menu"> <a href="3.html">Home</a></td>
+<td class="menu"> Quick service</td>
+<td class="menu"> Service Providers </td>
+<td class="ss"> <a href="form.html">Sign Up</a></td>
+<td class="ss"> <a href="login.html">Log In</a> </td>
+</table>
+</div>
+<div id="map"></div>
+ <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+    
+
+</body>
+</html>
